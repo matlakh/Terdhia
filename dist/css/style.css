@@ -1,30 +1,16 @@
 @font-face {
-  font-family: "TT Hoves";
+  font-family: "Zona Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/ZonaPro-Black.woff2") format("woff2"), url("../fonts/ZonaPro-Black.woff") format("woff"); }
+
+@font-face {
+  font-family: "Zona Pro";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/TTHoves-Bold.woff2") format("woff2"), url("../fonts/TTHoves-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: "TT Hoves";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/TTHoves-Regular.woff2") format("woff2"), url("../fonts/TTHoves-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: "TT Hoves";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/TTHoves-Medium.woff2") format("woff2"), url("../fonts/TTHoves-Medium.woff") format("woff"); }
-
-@font-face {
-  font-family: "TT Hoves";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../fonts/TTHoves-Light.woff2") format("woff2"), url("../fonts/TTHoves-Light.woff") format("woff"); }
+  src: url("../fonts/ZonaPro-Bold.woff2") format("woff2"), url("../fonts/ZonaPro-Bold.woff") format("woff"); }
 
 .header {
   display: -ms-flexbox;
@@ -229,13 +215,70 @@
 .menu__item {
   transition-duration: .25s; }
 
+.cookies {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  background: #161616;
+  padding: 120px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px; }
+  .cookies__img {
+    position: absolute;
+    bottom: 30px; }
+  .cookies__text {
+    color: #fff;
+    margin-left: 134px; }
+  .cookies__button {
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 22px;
+    font-weight: 400;
+    width: 385px;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .cookies__accept {
+    width: 265px;
+    height: 55px;
+    background: #fff;
+    color: #161616;
+    border-radius: 7px;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer; }
+    .cookies__accept p {
+      text-decoration: none; }
+    .cookies__accept:hover p {
+      text-decoration: underline; }
+  .cookies__refuse {
+    cursor: pointer;
+    background-color: transparent;
+    color: #9F9F9F;
+    width: 75px;
+    font-size: 22px;
+    font-weight: 400; }
+    .cookies__refuse p {
+      text-decoration: none; }
+    .cookies__refuse:hover p {
+      text-decoration: underline; }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'TT Hoves'; }
+  font-family: 'Zona Pro'; }
 
 a {
   text-decoration: none;
