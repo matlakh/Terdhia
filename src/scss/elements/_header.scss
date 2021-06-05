@@ -66,37 +66,43 @@
         &:hover .header__choose-lang {
             display: flex;
         }
+        &:hover svg #Контур_24 {
+            fill: #005DFF;
+        }
     }
     &__choose-lang {
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: -40px;
         display: none;
         flex-direction: column;
         align-items: center;
-        background: #005DFF;
+        background: #161616;
         width: 120px;
         height: 90px;
         border-radius: 7px;
         color: #fff;
         font-size: 16px;
-        font-weight: bold;
-        padding: 20px 35px;
-        & p {
-            text-align: left;
+        line-height: 21px;
+        padding: 15px 30px;
+        & a {
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 400;
+            cursor: pointer;
             &:hover {
-                font-size: 18px;
+                font-weight: bold;
             }
         }
         &::before {
             position: absolute;
-            top: -10px;
+            top: -15px;
             content: "";
             width: 0;
             height: 0;
             border-style: solid;
             border-width: 0 9.5px 18px 9.5px;
-            border-color: transparent transparent #005DFF transparent;
+            border-color: transparent transparent #161616 transparent;
         }
     }
     &__mob-menu {

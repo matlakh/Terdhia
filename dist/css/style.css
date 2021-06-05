@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Zona Pro";
   font-style: normal;
@@ -87,36 +88,41 @@
     .header__lang:hover .header__choose-lang {
       display: -ms-flexbox;
       display: flex; }
+    .header__lang:hover svg #Контур_24 {
+      fill: #005DFF; }
   .header__choose-lang {
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: -40px;
     display: none;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    background: #005DFF;
+    background: #161616;
     width: 120px;
     height: 90px;
     border-radius: 7px;
     color: #fff;
     font-size: 16px;
-    font-weight: bold;
-    padding: 20px 35px; }
-    .header__choose-lang p {
-      text-align: left; }
-      .header__choose-lang p:hover {
-        font-size: 18px; }
+    line-height: 21px;
+    padding: 15px 30px; }
+    .header__choose-lang a {
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 400;
+      cursor: pointer; }
+      .header__choose-lang a:hover {
+        font-weight: bold; }
     .header__choose-lang::before {
       position: absolute;
-      top: -10px;
+      top: -15px;
       content: "";
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 0 9.5px 18px 9.5px;
-      border-color: transparent transparent #005DFF transparent; }
+      border-color: transparent transparent #161616 transparent; }
   .header__mob-menu {
     width: 60px;
     height: 20px; }
